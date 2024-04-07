@@ -1,9 +1,20 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { User } from '../../../../../types';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LoginService {
+  loginUser(users: User[], user: { username: string; password: string }) {
+    let foundUser = users.find(
+      (exUser) =>
+        exUser.username === user.username && exUser.password === user.password
+    );
 
-  constructor() { }
+    if (foundUser) {
+      return foundUser;
+    }
+    return false;
+  }
 }

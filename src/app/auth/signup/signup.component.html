@@ -1,13 +1,8 @@
 <div class="mb-5">
-    <ngx-spinner
-    bdColor="rgba(51,51,51,0.8)"
-    size="medium"
-    color="#fff"
-    type="ball-scale-multiple"
-    style="z-index: 1000;"
-  >
-    <p style="font-size: 20px; color: white">Loading...</p>
-  </ngx-spinner>
+    <ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="ball-scale-multiple"
+        style="z-index: 1000;">
+        <p style="font-size: 20px; color: white">Loading...</p>
+    </ngx-spinner>
     <p class="text-3xl font-bold mb-3 flex items-center"> <img (click)="handleCurrentSlide('login')"
             src="../../../assets/back.png" alt="" class="w-8 h-8 mr-3 cursor-pointer"> Sign up</p>
     <p>You're one step away from posting shit!</p>
@@ -41,7 +36,7 @@
     class="bg-slate-800 flex justify-center text-white p-2 rounded mb-3 cursor-pointer hover:bg-slate-900 border-none">
     Sign up</button>
 
-    <div class="toast bg-slate-800 w-80 px-10 py-3 flex justify-center rounded text-white" *ngIf="existingUsertoast.status">{{existingUsertoast.msg}}</div>
-    <div class="toast bg-slate-800 w-80 px-10 py-3 flex justify-center rounded text-white" *ngIf="newUserToast.status">{{newUserToast.msg}}</div>
-
-  
+<div class="toast bg-slate-800 w-80 px-10 py-3 flex justify-center rounded text-white" *ngIf="existingUsertoast.status">
+    {{existingUsertoast.msg}}</div>
+<div class="toast bg-slate-800 w-80 px-10 py-3 flex justify-center rounded text-white" *ngIf="newUserToast.status">
+    {{newUserToast.msg}}</div>

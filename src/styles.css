@@ -4,8 +4,35 @@
 @tailwind utilities;
 
 .toast {
-    position: absolute;
-    top: 90%;
-    left: 40%;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  position: absolute;
+  top: 70px;
+  width: 200px;
+  background-color: #e5e7eb;
+  left: -100%;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.menu span {
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+
+.triangle {
+  position: absolute;
+  top: -10px;
+  left: 46%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #e5e7eb;
 }

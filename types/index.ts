@@ -2,7 +2,8 @@ export interface Post {
     id: string,
     title: string,
     content: string,
-    image?: string
+    image?: string,
+    userId: string | undefined
 }
 
 export interface User {

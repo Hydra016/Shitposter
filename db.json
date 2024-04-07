@@ -1,81 +1,69 @@
 {
   "posts": [
     {
-      "id": "e4aca105-cd27-47b8-a528-59562599bc9e",
-      "title": "Amazing Spain!",
-      "content": "Spain, located in southwestern Europe, is renowned for its rich history, diverse culture, and stunning landscapes. With a blend of ancient architecture, modern marvels, and vibrant cities, Spain offers visitors a captivating tapestry of experiences. From the sun-drenched beaches of the Mediterranean to the rugged mountains of the Pyrenees, Spain's natural beauty is equally breath-taking. Its culinary scene, highlighted by tapas bars and regional specialties, tantalizes taste buds. Flamenco music and dance, along with traditional bullfighting, reflect the country's passionate spirit. Spain's allure lies in its fusion of history, culture, and natural wonders, making it a captivating destination for travellers worldwide.",
-      "image": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712360924/idpdocjlgw6nbds5gnpt.jpg"
+      "id": "1cf0fd6c-c913-438a-a2cd-488f3aa22cff",
+      "title": "asdasda",
+      "content": "sdasdasd",
+      "image": "https://www.fivebranches.edu/wp-content/uploads/2021/08/default-image.jpg",
+      "userId": "17bc9e75-4cc9-443d-b0c8-9c2cd07d19fd"
     },
     {
-      "id": "1655b7ef-a092-4692-b522-a2fc6ee3700c",
-      "title": "Majestic Italia",
-      "content": "Italy, in southern Europe, is famous for its history, food, and beauty. Ancient ruins, delicious cuisine like pizza and pasta, and stunning landscapes draw visitors from around the globe. From the Colosseum in Rome to the canals of Venice, Italy offers a rich cultural experience.",
-      "image": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712361162/idxan0sjtn9uvpecxute.jpg"
+      "id": "674a300f-92ae-4571-af27-234838e31fd3",
+      "title": "asdasd",
+      "content": "asdasdasd",
+      "image": "https://www.fivebranches.edu/wp-content/uploads/2021/08/default-image.jpg",
+      "userId": "17bc9e75-4cc9-443d-b0c8-9c2cd07d19fd"
+    },
+    {
+      "id": "8221b640-64f5-4139-979a-f38d448c1055",
+      "title": "my post",
+      "content": "thusi is fqasas",
+      "image": "https://www.fivebranches.edu/wp-content/uploads/2021/08/default-image.jpg",
+      "userId": "17bc9e75-4cc9-443d-b0c8-9c2cd07d19fd"
+    },
+    {
+      "id": "c0a50766-1923-4dee-bd2d-8c7261070091",
+      "title": "asdasd",
+      "content": "asdasd",
+      "image": "https://www.fivebranches.edu/wp-content/uploads/2021/08/default-image.jpg",
+      "userId": "17bc9e75-4cc9-443d-b0c8-9c2cd07d19fd"
+    },
+    {
+      "id": "2a6f6ce8-7097-4a11-b5b9-2b7c31ff3cc2",
+      "title": "asdas",
+      "content": "dasd",
+      "image": "https://www.fivebranches.edu/wp-content/uploads/2021/08/default-image.jpg",
+      "userId": "17bc9e75-4cc9-443d-b0c8-9c2cd07d19fd"
     }
   ],
   "users": [
     {
-      "id": "c7277eb8-a006-4617-875a-ccd9351b47f4",
+      "id": "5de50f25-e017-4216-a0bc-095f51f09569",
       "name": "test",
       "username": "test",
       "password": "test",
-      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712445303/o6vopdnixlqyis8eths5.png"
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712492183/xyukvpmios5ciwr34kto.png"
     },
     {
-      "id": "e88df6ce-1ffd-48c9-a354-8bc6830a1858",
-      "name": "test",
-      "username": "test",
-      "password": "test",
-      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712445320/mujz209kchyzqmr2tfva.png"
+      "id": "17bc9e75-4cc9-443d-b0c8-9c2cd07d19fd",
+      "name": "Haider",
+      "username": "haider",
+      "password": "1234",
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712497858/ho0ssorfb8ee8uv4hg1r.png"
     },
     {
-      "id": "5caa2b6f-53da-4ae4-8a87-7a5897cdcc9b",
-      "name": "test",
-      "username": "test",
-      "password": "test",
-      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712445713/eie2syoxo34685fthimg.png"
-    },
-    {
-      "id": "d002cc1f-1c5f-439d-a3c3-fc475481fbfd",
+      "id": "c14be57e-77ff-4624-b324-0e5cfa669f57",
       "name": "test2",
-      "username": "test22",
-      "password": "test2",
-      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712445936/mp1obag8advpyrli7o14.png"
+      "username": "test2",
+      "password": "1234",
+      "photo": "https://as2.ftcdn.net/v2/jpg/03/49/49/79/1000_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg"
     },
     {
-      "id": "6add5c2d-7b0e-42ef-8c7b-9c81406cb638",
-      "name": "test2",
-      "username": "test22",
-      "password": "test2",
-      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712445960/et7hp2kwvll4vmbj77jo.png"
-    },
-    {
-      "id": "3c2dde9f-95b2-4efe-808d-a9f0fa28839b",
-      "name": "",
-      "username": "qweqwe",
-      "password": "qweqwe",
-      "photo": ""
-    },
-    {
-      "id": "6e135e7b-3588-4045-aa5b-b8045aaed02f",
-      "name": "test3",
-      "username": "test3",
-      "password": "qweqwe",
-      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712446454/glocbvx60axn3hnspi2n.png"
-    },
-    {
-      "id": "7bd8d76b-b3fb-49f2-a622-f19fda73ae5b",
-      "name": "test4",
-      "username": "test4",
-      "password": "qweqwe",
-      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712446523/oudgt8ebznh7gmnxlxac.png"
-    },
-    {
-      "id": "7e7b7344-ff64-435e-a6f8-014940ccd026",
-      "name": "test6",
-      "username": "test6",
-      "password": "test",
-      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712490460/yfjhwcoxjcnr0xjsbdym.jpg"
+      "id": "160d716d-4eea-410a-8ddf-6fa67fa93b72",
+      "name": "jamies",
+      "username": "jj1234",
+      "password": "1234",
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712504118/aqmdeyuw6ggpbodqkp1i.jpg"
     }
   ]
 }

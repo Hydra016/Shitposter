@@ -2,10 +2,39 @@
     <div>
         Shitposter
     </div>
-    <div>
-        <span *ngIf="screen === 'create'" (click)="handleChangeScreen('home')" class="mr-10 cursor-pointer">Home</span>
+    <div class="flex items-center">
+        <span *ngIf="screen === 'create'" (click)="handleChangeScreen('home')" class="mr-5 cursor-pointer">Home</span>
         <span *ngIf="screen === 'home'" (click)="handleChangeScreen('create')"
-            class="mr-10 cursor-pointer">Create</span>
-        <span class="px-5 py-2 bg-red-600 rounded">Logout</span>
+            class="mr-10 cursor-pointer hover:underline md:block hidden">Create</span>
+        <div class="relative">
+            <img src={{user?.photo}} alt="" class="mr-5 rounded-full w-14 h-14 object-cover cursor-pointer"
+                (click)="handleShowMenu()">
+            <div class="menu flex flex-col" *ngIf="showMenu">
+                <div class="triangle"></div>
+                <div class="flex items-center hover:bg-gray-300 px-5 mt-3">
+                    <img src="../../assets/user.png" alt="" class="w-5 h-5">
+                    <span>Profile</span>
+                </div>
+                <div *ngIf="screen === 'home'" (click)="handleChangeScreen('create')"
+                    class="flex items-center hover:bg-gray-300 px-5 block md:hidden">
+                    <img src="../../assets/plus.png" alt="" class="w-5 h-5">
+                    <span>Create</span>
+                </div>
+                <div *ngIf="screen === 'create'" (click)="handleChangeScreen('home')"
+                    class="flex items-center hover:bg-gray-300 px-5 block md:hidden">
+                    <img src="../../assets/home.png" alt="" class="w-5 h-5">
+                    <span>Home</span>
+                </div>
+                <div class="flex items-center hover:bg-gray-300 px-5">
+                    <img src="../../assets/poop.png" alt="" class="w-5 h-5">
+                    <span>My Shits</span>
+                </div>
+                <div (click)="logoutUser()" class="flex items-center hover:bg-gray-300 px-5">
+                    <img src="../../assets/logout.png" alt="" class="w-5 h-5">
+                    <span>Logout</span>
+                </div>
+            </div>
+        </div>
     </div>
+
 </div>

@@ -5,28 +5,39 @@ import { BlogsService } from './services/blogs.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit {
   title = 'shitposter';
   posts: Post[] = [];
   isLoggedIn: boolean = false;
-  user: User = {
+  user: User | null = {
     id: '',
     name: '',
     username: '',
     password: '',
-    photo: ''
-  }
+    photo: '',
+  };
+  users: User[] = []
 
   constructor(private blogService: BlogsService) {}
-  
+
   currentScreen = 'login';
 
+  keepLoggedIn() {
+    this.currentScreen = 'home';
+    const JsonData = localStorage.getItem('isLoggedIn');
+    if (JsonData) {
+      const finalData = JSON.parse(JsonData);
+      this.isLoggedIn = finalData;
+    }
+  }
 
   checkLogin(user: User) {
-    if(user.username) {
-      this.isLoggedIn = true
+    if (user.username) {
+      this.currentScreen = 'home';
+      this.user = user;
+      this.isLoggedIn = true;
     }
   }
 
@@ -35,12 +46,23 @@ export class AppComponent implements OnInit {
   }
 
   changeCurrentScreen(screen: string) {
-    this.currentScreen = screen
+    this.currentScreen = screen;
+  }
+
+  handleLogOut(isLoggedIn: boolean) {
+    this.isLoggedIn = isLoggedIn;
   }
 
   ngOnInit(): void {
-      this.blogService.getPosts().subscribe(posts => {
-        this.posts = posts
-      })
+    this.blogService.getPosts().subscribe((posts) => {
+      this.posts = posts;
+    });
+    this.keepLoggedIn();
+    if (this.blogService.getUser()) {
+      this.user = this.blogService.getUser();
+    }
+    this.blogService.getUsers().subscribe(users => {
+      this.users = users
+    })
   }
 }

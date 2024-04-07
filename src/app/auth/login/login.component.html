@@ -6,19 +6,26 @@
 <div class="mb-5">
     <div class="flex flex-col mb-3">
         <label>Username</label>
-        <input (input)="handleChange($event, 'username')" class="bg-gray-100 border border-gray-300 outline-none p-2 rounded" type="text">
+        <input (input)="handleChange($event, 'username')"
+            class="bg-gray-100 border border-gray-300 outline-none p-2 rounded" type="text">
     </div>
     <div class="flex flex-col mb-3">
         <label>Password</label>
-        <input (input)="handleChange($event, 'password')" class="bg-gray-100 border border-gray-300 outline-none p-2 rounded" type="password">
+        <input (input)="handleChange($event, 'password')"
+            class="bg-gray-100 border border-gray-300 outline-none p-2 rounded" type="password">
     </div>
     <div class="flex items-center">
-        <input (click)="handleCheckBox()" class="bg-gray-100 border border-gray-300 outline-none p-2 rounded mr-1" type="checkbox">
-        <label>remember password</label>
+        <input (click)="handleCheckBox()" class="bg-gray-100 border border-gray-300 outline-none p-2 rounded mr-1"
+            type="checkbox">
+        <label>Keep logged in?</label>
     </div>
 
 </div>
-<button (click)="handleSubmit()" class="border-none bg-slate-800 flex justify-center text-white p-2 rounded mb-3 cursor-pointer hover:bg-slate-900">
+<button (click)="handleSubmit()"
+    class="border-none bg-slate-800 flex justify-center text-white p-2 rounded mb-3 cursor-pointer hover:bg-slate-900">
     Sign in</button>
 <div>Don't you have an account? <span class="text-blue-400 cursor-pointer hover:text-blue-500"
         (click)="handleCurrentSlide('signup')">Sign up</span></div>
+
+<div class="toast bg-slate-800 w-80 px-10 py-3 flex justify-center rounded text-white" *ngIf="ErrorToast.status">
+    {{ErrorToast.msg}}</div>

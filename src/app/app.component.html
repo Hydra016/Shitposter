@@ -1,16 +1,23 @@
 <div *ngIf="!isLoggedIn">
-    <app-auth (loggedInUser)="checkLogin($event)"></app-auth>
+  <app-auth (loggedInUser)="checkLogin($event)"></app-auth>
 </div>
 
-
 <div *ngIf="isLoggedIn" class="md:px-20 py-5 px-10">
-    <div>
-    <app-navbar [screen]="currentScreen" (changeScreen)="changeCurrentScreen($event)"></app-navbar>
-    </div>
-    <div class="md:py-10 py-5" *ngIf="currentScreen === 'home'">
-        <app-blogs [posts]="posts"></app-blogs>
-    </div>
-    <div class="md:py-10 py-5" *ngIf="currentScreen === 'create'">
-        <app-create-blog (newPost)="checkPosts($event)"></app-create-blog>
-    </div>
+  <div>
+    <app-navbar
+      [user]="user"
+      (isLoggedIn)="handleLogOut($event)"
+      [screen]="currentScreen"
+      (changeScreen)="changeCurrentScreen($event)"
+    ></app-navbar>
+  </div>
+  <div class="md:py-10 py-5" *ngIf="currentScreen === 'home'">
+    <app-blogs [users]="users" [posts]="posts"></app-blogs>
+  </div>
+  <div class="md:py-10 py-5" *ngIf="currentScreen === 'create'">
+    <app-create-blog
+      [user]="user"
+      (newPost)="checkPosts($event)"
+    ></app-create-blog>
+  </div>
 </div>
