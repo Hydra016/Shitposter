@@ -1,0 +1,21 @@
+<p class="font-bold text-2xl md:text-4xl mb-10">Post some shit!</p>
+
+<div class="flex flex-col">
+    <label>Title*</label>
+    <input type="text" class="border border-gray-300 md:w-3/5 rounded mb-5 p-2 outline-none"
+        (input)="handleChange($event, 'title')">
+</div>
+<div class="flex flex-col">
+    <label>Content*</label>
+    <textarea name="" id="" cols="30" rows="10"
+        class="border border-gray-300 p-2 md:w-3/5 outline-none rounded resize-none mb-5"
+        (input)="handleChange($event, 'content')"></textarea>
+</div>
+
+<div>
+    <input (input)="handleImage($event)" type="file">
+</div>
+<div (click)="handleSubmit()"
+    class="px-5 py-2 bg-blue-800 inline-block rounded text-white cursor-pointer hover:bg-blue-900">
+    Submit
+</div>

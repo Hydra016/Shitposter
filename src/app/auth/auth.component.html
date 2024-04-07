@@ -1,0 +1,13 @@
+<div class="relative grid grid-cols-3 overflow-hidden w-screen h-screen">
+    <div class="flex justify-center items-center flex-col md:col-span-1 col-span-3">
+        <div *ngIf="currentSlide == 'login'">
+            <app-login [users]="users" (currentSlide)="handleCurrentSlide($event)"></app-login>
+        </div>
+        <div *ngIf="currentSlide == 'signup'">
+           <app-signup (createdUser)="handleCreatedUser($event)" [users]="users" (currentSlide)="handleCurrentSlide($event)"></app-signup>
+        </div>
+    </div>
+    <div class="col-span-2 md:block hidden">
+        <img src="../../../assets/login.jpg" alt="" class="object-cover h-full">
+    </div>
+</div>

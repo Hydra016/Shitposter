@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": "e4aca105-cd27-47b8-a528-59562599bc9e",
+      "title": "Amazing Spain!",
+      "content": "Spain, located in southwestern Europe, is renowned for its rich history, diverse culture, and stunning landscapes. With a blend of ancient architecture, modern marvels, and vibrant cities, Spain offers visitors a captivating tapestry of experiences. From the sun-drenched beaches of the Mediterranean to the rugged mountains of the Pyrenees, Spain's natural beauty is equally breath-taking. Its culinary scene, highlighted by tapas bars and regional specialties, tantalizes taste buds. Flamenco music and dance, along with traditional bullfighting, reflect the country's passionate spirit. Spain's allure lies in its fusion of history, culture, and natural wonders, making it a captivating destination for travellers worldwide.",
+      "image": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712360924/idpdocjlgw6nbds5gnpt.jpg"
+    },
+    {
+      "id": "1655b7ef-a092-4692-b522-a2fc6ee3700c",
+      "title": "Majestic Italia",
+      "content": "Italy, in southern Europe, is famous for its history, food, and beauty. Ancient ruins, delicious cuisine like pizza and pasta, and stunning landscapes draw visitors from around the globe. From the Colosseum in Rome to the canals of Venice, Italy offers a rich cultural experience.",
+      "image": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712361162/idxan0sjtn9uvpecxute.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "c7277eb8-a006-4617-875a-ccd9351b47f4",
+      "name": "test",
+      "username": "test",
+      "password": "test",
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712445303/o6vopdnixlqyis8eths5.png"
+    },
+    {
+      "id": "e88df6ce-1ffd-48c9-a354-8bc6830a1858",
+      "name": "test",
+      "username": "test",
+      "password": "test",
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712445320/mujz209kchyzqmr2tfva.png"
+    },
+    {
+      "id": "5caa2b6f-53da-4ae4-8a87-7a5897cdcc9b",
+      "name": "test",
+      "username": "test",
+      "password": "test",
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712445713/eie2syoxo34685fthimg.png"
+    },
+    {
+      "id": "d002cc1f-1c5f-439d-a3c3-fc475481fbfd",
+      "name": "test2",
+      "username": "test22",
+      "password": "test2",
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712445936/mp1obag8advpyrli7o14.png"
+    },
+    {
+      "id": "6add5c2d-7b0e-42ef-8c7b-9c81406cb638",
+      "name": "test2",
+      "username": "test22",
+      "password": "test2",
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712445960/et7hp2kwvll4vmbj77jo.png"
+    },
+    {
+      "id": "3c2dde9f-95b2-4efe-808d-a9f0fa28839b",
+      "name": "",
+      "username": "qweqwe",
+      "password": "qweqwe",
+      "photo": ""
+    },
+    {
+      "id": "6e135e7b-3588-4045-aa5b-b8045aaed02f",
+      "name": "test3",
+      "username": "test3",
+      "password": "qweqwe",
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712446454/glocbvx60axn3hnspi2n.png"
+    },
+    {
+      "id": "7bd8d76b-b3fb-49f2-a622-f19fda73ae5b",
+      "name": "test4",
+      "username": "test4",
+      "password": "qweqwe",
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712446523/oudgt8ebznh7gmnxlxac.png"
+    },
+    {
+      "id": "7e7b7344-ff64-435e-a6f8-014940ccd026",
+      "name": "test6",
+      "username": "test6",
+      "password": "test",
+      "photo": "http://res.cloudinary.com/dxkvnmbtd/image/upload/v1712490460/yfjhwcoxjcnr0xjsbdym.jpg"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<div class="flex justify-between items-center">
+    <div>
+        Shitposter
+    </div>
+    <div>
+        <span *ngIf="screen === 'create'" (click)="handleChangeScreen('home')" class="mr-10 cursor-pointer">Home</span>
+        <span *ngIf="screen === 'home'" (click)="handleChangeScreen('create')"
+            class="mr-10 cursor-pointer">Create</span>
+        <span class="px-5 py-2 bg-red-600 rounded">Logout</span>
+    </div>
+</div>

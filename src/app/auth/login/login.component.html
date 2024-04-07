@@ -1,0 +1,24 @@
+<div class="mb-5">
+    <p class="text-3xl font-bold mb-3">Welcome Back Shitposter</p>
+    <p>Today is a new day. It's your day. Post some shit!</p>
+</div>
+
+<div class="mb-5">
+    <div class="flex flex-col mb-3">
+        <label>Username</label>
+        <input (input)="handleChange($event, 'username')" class="bg-gray-100 border border-gray-300 outline-none p-2 rounded" type="text">
+    </div>
+    <div class="flex flex-col mb-3">
+        <label>Password</label>
+        <input (input)="handleChange($event, 'password')" class="bg-gray-100 border border-gray-300 outline-none p-2 rounded" type="password">
+    </div>
+    <div class="flex items-center">
+        <input (click)="handleCheckBox()" class="bg-gray-100 border border-gray-300 outline-none p-2 rounded mr-1" type="checkbox">
+        <label>remember password</label>
+    </div>
+
+</div>
+<button (click)="handleSubmit()" class="border-none bg-slate-800 flex justify-center text-white p-2 rounded mb-3 cursor-pointer hover:bg-slate-900">
+    Sign in</button>
+<div>Don't you have an account? <span class="text-blue-400 cursor-pointer hover:text-blue-500"
+        (click)="handleCurrentSlide('signup')">Sign up</span></div>
